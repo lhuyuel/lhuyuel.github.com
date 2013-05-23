@@ -7,11 +7,12 @@ tags: [C++]
 ---
 {% include JB/setup %}
 Suppose we have a file named 'data.txt', which contains the following:
+
 	It was the best of times, it was the worst of times,
 	it was the age of wisdom, it was the age of foollishness,
 	it was the epoch of belief, it was the epoch of incredulity
 
-{% hightlight cpp linenos %}
+{% highlight cpp linenos %}
 #include <iostream>  
 #include <fstream>  
 #include <string>  
@@ -24,7 +25,7 @@ void OutPutAnEmptyLine()
    cout<<"\n"; 
 } 
   
-//读取方式: 逐词读取, 词之间用空格区分 
+//读取方式: 逐词读取, 词之间用空格区分.
 //read data from the file, Word By Word 
 //when used in this manner, we'll get space-delimited bits of text from the file 
 //but all of the whitespace that separated words (including newlines) was lost. 
@@ -84,14 +85,17 @@ int main()
     ReadDataFromFileWBW(); //逐词读入字符串 
     OutPutAnEmptyLine(); //输出空行
   
-    ReadDataFromFileLBLIntoCharArray(); //逐词读入字符数组
+    ReadDataFromFileLBLIntoCharArray(); //逐行读入字符数组
     OutPutAnEmptyLine(); //输出空行
   
-    ReadDataFromFileLBLIntoString(); //逐词读入字符串
+    ReadDataFromFileLBLIntoString(); //逐行读入字符串
     OutPutAnEmptyLine(); //输出空行
   
     ReadDataWithErrChecking(); //带检测的读取 
     return 0;
 } 
 {% endhighlight %}
+
+Here is the output:
+
 
