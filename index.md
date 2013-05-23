@@ -4,6 +4,6 @@ title: Poca favilla gran fiamma seconda
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
-```C++
+```Python
 while( success != try());
 ```
