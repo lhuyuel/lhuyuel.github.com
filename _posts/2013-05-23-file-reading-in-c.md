@@ -129,6 +129,8 @@ Here is the output:
 
 	Press any key to continue
 
+
+
 ###Check if there is a newline bit
 {% highlight cpp linenos %}
 #include <iostream>  
@@ -145,6 +147,7 @@ while( fin >> word )
 	}
 }
 {% endhighlight %}
+
 
 ###Check if it is the end of file
 {% highlight cpp linenos %}
