@@ -99,6 +99,7 @@ int main()
 {% endhighlight %}
 
 Here is the output:
+
 	Read from file: It 
 	Read from file: was
 	Read from file: the
@@ -130,6 +131,9 @@ Here is the output:
 
 ###Check if there is a newline bit
 {% highlight cpp linenos %}
+#include <iostream>  
+#include <fstream>  
+#include <string> 
 
 ifstream fin(argv[1]); 
 string word;
