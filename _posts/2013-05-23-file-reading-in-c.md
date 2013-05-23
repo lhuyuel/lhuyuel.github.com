@@ -6,6 +6,8 @@ category: learning
 tags: [C++]
 ---
 {% include JB/setup %}
+###Read file by line and word
+
 Suppose we have a file named 'data.txt', which contains the following:
 
 	It was the best of times, it was the worst of times,
@@ -97,5 +99,57 @@ int main()
 {% endhighlight %}
 
 Here is the output:
+	Read from file: It 
+	Read from file: was
+	Read from file: the
+	Read from file: best
+	Read from file: of 
+	Read from file: times,
+	Read from file: it
+	Read from file: was
+	Read from file: the
+	Read from file: worst
+	Read from file: of
+	Read from file: times,
+	Read from file: it
+	Read from file: was
+	Read from file: the
+	....	
+	
+	Read from file: It was the best of times, it was the worst of times,
+	Read from file: it was the age of wisdom, it was the age of foollishness,
+	Read from file: it was the epoch of belief, it was the epoch of incredulity
+
+	Read from file: It was the best of times, it was the worst of times,
+	Read from file: it was the age of wisdom, it was the age of foollishness,
+	Read from file: it was the epoch of belief, it was the epoch of incredulity
+
+	Error opening  dataaaaa.txt for input
+
+	Press any key to continue
+
+###Check if there is a newline bit
+{% highlight cpp linenos %}
+
+ifstream fin(argv[1]); 
+string word;
+while( fin >> word ) 
+{
+	lines.push_back(word);
+	if( fin.peek() == '\n' )
+	{//newline detected
+	}
+}
+{% endhighlight %}
+
+###Check if it is the end of file
+{% highlight cpp linenos %}
+if( fin.peek() == EOF) 
+{
+	if (fin.eof())// end of file
+	{//do something here
+	}
+}
+{% endhighlight %}
 
 
