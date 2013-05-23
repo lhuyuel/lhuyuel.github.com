@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Poca favilla gran fiamma seconda
+title: Poca favilla gran fiamma seconda```while( success != try());```
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
-```
-	while( success != try());
-```
+
