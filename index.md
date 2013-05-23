@@ -1,6 +1,6 @@
 ---
 layout: page
-title: while( success != try() );
+title: while( attempt() != succeed );
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
