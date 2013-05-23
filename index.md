@@ -5,5 +5,5 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 ```Python
-while( success != try());
+	while( success != try());
 ```
