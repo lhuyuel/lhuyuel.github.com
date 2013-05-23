@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Life is like a box of chocolate
+title: Poca favilla gran fiamma seconda
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
+
+	while( success != try());
