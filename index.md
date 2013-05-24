@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Power Leveling
+title: Yue Hu
 tagline: 
 ---
 {% include JB/setup %}
-<h2>Latest 10 Posts </h2>
+<h3>Latest 10 Posts </h3>
 <ul class="posts">
 
   {% for post in site.posts limit:10 %}
