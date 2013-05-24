@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Power Leveling <h4>while( attempt() != succeed );</h4>
+title : Power Leveling 
 tagline: 
 author :
   name : Yue Hu
