@@ -6,7 +6,7 @@ category: learning
 tags: [C++]
 ---
 {% include JB/setup %}
-###1. Read file by line and word
+###1.Read file by line and word
 
 Suppose we have a file named 'data.txt', which contains the following:
 
@@ -131,7 +131,7 @@ Here is the output:
 
 
 
-###2. Check if there is a newline bit
+###2.Check if there is a newline bit
 {% highlight cpp linenos %}
 #include <iostream>  
 #include <fstream>  
@@ -149,7 +149,7 @@ while( fin >> word )
 {% endhighlight %}
 
 
-###3. Check if it is the end of file
+###3.Check if it is the end of file
 {% highlight cpp linenos %}
 if( fin.peek() == EOF) 
 {
