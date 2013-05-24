@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Yue Hu <h4>while( attempt()!= succeed );</h4>
+title: Yue Hu <h4>while( attempt() != succeed );</h4>
 tagline: 
 ---
 {% include JB/setup %}
