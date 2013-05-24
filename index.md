@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <h4 style="text-align:right">while( attempt() != succeed );</h4>
+title: <h4>while( attempt() != succeed );</h4>
 tagline: 
 ---
 {% include JB/setup %}
