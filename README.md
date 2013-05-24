@@ -1,3 +1,5 @@
+#Yue's website
+This is a website based on Jekyll-Bootstrap
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
