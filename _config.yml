@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Power Leveling
-tagline: programming
+tagline: 
 author :
   name : Yue Hu
   email : hihuyue at gmail dot com
