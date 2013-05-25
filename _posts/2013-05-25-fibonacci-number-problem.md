@@ -21,13 +21,14 @@ int fibonacciRecursive( int n )
 }
 {% endhighlight %}
 The code above will waste time in calculating the same numbers again and again. Take f(10) for example:
-                 f(10)
-               /       \
-            f(9)         f(8)
-          /     \       /    \
-       f(8)     f(7)  f(7)   f(6)
-      /   \     /   \ 
-   f(7)  f(6)  f(6) f(5)
+	
+	                 f(10)
+	               /       \
+	            f(9)         f(8)
+	          /     \       /    \
+	       f(8)     f(7)  f(7)   f(6)
+	      /   \     /   \ 
+	   f(7)  f(6)  f(6) f(5)
 可以看出，使用此递归的方法会做很多重复计算，也使得时间复杂度呈指数增长。为了避免重复计算，可以使用迭代的方法。
 We could optimize this by calculate the Nth number iteratively:
 ####2. Iterative 迭代求解 O(n)
