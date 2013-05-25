@@ -7,6 +7,7 @@ tags: [algorithm]
 ---
 {% include JB/setup %}
 ###1. The Nth Fibonacci number 求费氏数列第N项
+====================================================
 According to the definition of Fibonacci sequence, the Nth number is:
 	F(n) = F(n-2)+F(n-1)
 最直观的方法就是根据公式求.
@@ -54,10 +55,11 @@ The matrix representation gives the following closed expression for the Fibonacc
 矩阵法用到了Fibonacci的数学性质，因为不太会在markdown里打公式和插图片，以后再补啦。
 
 ###Problem2: Check if N is a Fibonacci number 判断N是否属于费氏数列
+==========================================
 Since Fibonacci series grow very fast, store a Precomputed table for lookup seems fine to small numbers.
 然后，wiki说费氏数列的数有这个性质：
 ```
-N is a Fibonacci number if and only if 5 N^2 + 4 or 5N^2 šC 4 is a square number
+N is a Fibonacci number if and only if (5N^2+4) or (5N^2-4) is a square number.
 ```
 所以问题就变成了判断一个数是否是完全平方数。
 代码如下：
