@@ -45,5 +45,6 @@ Output: index1=1, index2=2
 {% endhighlight %}
 
 ###注意：
-1. *zero-based* , 意思是角标Index不是从零开始数。
+1. *zero-based* , 意思是角标Index不是从零开始数。  
+
 2. 审题，返回类型和参数类型。
