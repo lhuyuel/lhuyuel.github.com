@@ -15,7 +15,8 @@ tags: [Ubuntu, 经验, 设置]
 
 但通常我总是没有这么顺利的，在autorun运行中出现了：  
 ```
-“build the main guest additions module failed！(Look at /var/log/vboxadd-install.log to find out what went wrong) ”
+“build the main guest additions module failed！  
+(Look at /var/log/vboxadd-install.log to find out what went wrong) ”
 ```  
 在log文件里面我找到了E: Couldn't find package kernel-header-3.2.0-40  
 
