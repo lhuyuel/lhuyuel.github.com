@@ -3,7 +3,7 @@ layout: post
 title: "Fibonacci Number Problem"
 description: ""
 category: algorithm
-tags: [algorithm]
+tags: [Algorithm]
 ---
 {% include JB/setup %}
 ###1. The Nth Fibonacci number 求费氏数列第N项
