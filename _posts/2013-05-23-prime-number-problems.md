@@ -79,7 +79,9 @@ unsigned Montgomery(unsigned n,unsigned p,unsigned m)
 {% endhighlight %}
 
 
-	Note: Technically, Fermat's test is a test for compositeness, rather than for primeness. This is because, if the test fails, the number is certainly composite, but if the test passes, the number is very likely prime, but might possibly be a composite pseudoprime.	
+<blockquote> 
+Technically, Fermat's test is a test for compositeness, rather than for primeness. This is because, if the test fails, the number is certainly composite, but if the test passes, the number is very likely prime, but might possibly be a composite pseudoprime.	
+</blockquote>
 	
 ####3. Miller-Rabin primality test
 http://en.wikipedia.org/wiki/Miller_rabin

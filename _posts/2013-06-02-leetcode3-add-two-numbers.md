@@ -137,4 +137,4 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
 问题出在最开始使用“ListNode tmp(0);” 创建对象,出现runtime error。<br>
 new出来的存储在堆上，而是用类名创建的存储在栈上。<br>
 前者是运行时分配空间，需要自己释放；后者在运行前就已经分配好空间，函数结束后会自动释放。<br>
-具体可以看这篇。<br>
+具体可以看[这篇](http://lhuyuel.github.io/cpp/2013/06/02/create-object-by-new-and-by-class-name/)。<br>

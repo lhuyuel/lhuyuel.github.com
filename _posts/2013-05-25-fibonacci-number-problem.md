@@ -2,7 +2,7 @@
 layout: post
 title: "Fibonacci Number Problem"
 description: ""
-category: algorithm
+category: Algorithm
 tags: [Algorithm]
 ---
 {% include JB/setup %}
