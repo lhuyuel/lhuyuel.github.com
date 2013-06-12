@@ -6,7 +6,7 @@ category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
 {% include JB/setup %}
-###1. 问题：
+###1. Problem：
 <blockquote>
  The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)<br>
 
@@ -22,7 +22,7 @@ string convert(string text, int nRows);<br>
 <br>
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".<br>
 </blockquote>
-###2.代码：
+###2.My solution：
 {% highlight cpp linenos %}
 /*use a flag called "down" to mark if it should go down or up.
 It's very nice to use vector<char> to store lines.
@@ -76,5 +76,5 @@ string convert(string s, int nRows) {
     }
 {% endhighlight %}
 
-###3. 题后唠叨：
+###3. Notes：
 都已经在注释里了，嗯。

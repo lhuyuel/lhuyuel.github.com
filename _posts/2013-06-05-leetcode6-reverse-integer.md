@@ -2,18 +2,18 @@
 layout: post
 title: "LeetCode[6]: Reverse Integer"
 description: ""
-category: 
-tags: []
+category: 练习题
+tags: [C++, LeetCode,  刷题]
 ---
 {% include JB/setup %}
-###1. 问题：
+###1. Problem：
 <blockquote>
 Reverse digits of an integer.<br>
 <br>
 Example1: x = 123, return 321<br>
 Example2: x = -123, return -321
 </blockquote>
-###2. 我的代码：
+###2. My solution：
 这是最开始想到的代码：
 {%highlight cpp linenos%}
 int reverse(int x) 
@@ -52,5 +52,5 @@ int reverse(int x)
 {%endhighlight%}
 
 
-###3. 题后唠叨：
+###3. Notes：
 别忘了负数

@@ -7,13 +7,13 @@ tags: [C++, LeetCode,  刷题]
 ---
 {% include JB/setup %}
 
-###1. 问题：
+###1. Problem：
 <blockquote>
 You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.<br>
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)<br>
 Output: 7 -> 0 -> 8
 </blockquote>
-###2. 我的代码：
+###2. Solution：
 和别人的比起来显得好冗长啊。。。
 {% highlight cpp linenos %}
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
@@ -102,7 +102,7 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     }
 {% endhighlight %}
 
-贴一个比较喜欢的版本：
+This version is the one I like the most：
 {% highlight cpp linenos %}
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
 	ListNode *s = new ListNode(0);
@@ -132,7 +132,7 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
 }
 {% endhighlight %}
 	
-###3. 题后唠叨：
+###3. Notes：
 改了很久才改对。<br>
 问题出在最开始使用“ListNode tmp(0);” 创建对象,出现runtime error。<br>
 new出来的存储在堆上，而是用类名创建的存储在栈上。<br>

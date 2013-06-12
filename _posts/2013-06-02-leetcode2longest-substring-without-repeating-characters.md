@@ -6,11 +6,11 @@ category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
 {% include JB/setup %}
-###1. 问题：
+###1. Problem：
 <blockquote>
 Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.
 </blockquote>
-###2. 我的代码:
+###2. Solution:
 Brute Force.  
 Complexicty: O(n^2)
 {% highlight cpp linenos %}
@@ -54,7 +54,7 @@ int lengthOfLongestSubstring(string s) {
     }
 {% endhighlight %}
 
-###3.题后唠叨：
+###3.Notes：
 依然没能完杀。  
 		1. 首先是题目没看清楚。。。  
 		2. 然后是逻辑没有想清楚。。。  

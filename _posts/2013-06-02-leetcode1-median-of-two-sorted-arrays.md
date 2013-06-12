@@ -6,14 +6,12 @@ category: 练习题
 tags: [C++, LeetCode, 刷题]
 ---
 {% include JB/setup %}
-###1. 题目：
+###1. Problem：
 <blockquote>
 There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 </blockquote>
-###2. 我的代码:
+###2. Solution:
 Complexity: O( log(m+n) )  
-Tests: 2078/2078  
-Time: 204 milli secs  
 
 {% highlight cpp linenos %}
 double findMedianSortedArrays(int A[], int m, int B[], int n) {
@@ -55,9 +53,7 @@ double findMedianSortedArrays(int A[], int m, int B[], int n) {
 
 {% endhighlight %}
 
-###3.题后唠叨：
-没能完杀。两次才过。  
-注意两个地方：  
+###3.Notes：  
 		1. 整数除以整数得到的是整数且向下取整。    
 		2. m+n是偶数求中位数时，两数相加别忘除以2。
 完成总时间：19分20秒
