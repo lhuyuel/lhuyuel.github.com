@@ -10,7 +10,7 @@ tags: [C++, LeetCode, 刷题]
 <blockquote>
 There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 </blockquote>
-###2. Solution:
+###2. My Solution:
 Complexity: O( log(m+n) )  
 
 {% highlight cpp linenos %}

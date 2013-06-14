@@ -6,11 +6,11 @@ category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
 {% include JB/setup %}
-###1. 问题:
+###1. Problem:
 <blockquote>
 Implement atoi to convert a string to an integer.
 </blockquote>
-###2. 我的代码：
+###2. My solusion：
 {% highlight cpp linenos%}
    int atoi(const char *str) {
         const char *p = str;
@@ -45,7 +45,7 @@ Implement atoi to convert a string to an integer.
     }
 {% endhighlight %}
 
-###3. 题后唠叨：
+###3. Notes：
 要考虑正负情况，还有极值问题。<br>
 具体见[这里](http://discuss.leetcode.com/questions/192/string-to-integer-atoi).<br>
 C++有一个int isdigit(int c)函数可以判断一个字符是否是十进制的数字。
