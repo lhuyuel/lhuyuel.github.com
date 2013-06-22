@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "About Memory Leek"
+title: "Memory Leek"
 description: ""
 category: 
-tags: [C++]
+tags: []
 ---
 {% include JB/setup %}
-
