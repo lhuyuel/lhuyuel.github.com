@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About Memory Leek"
+title: "About Memory Leak"
 description: ""
 category: CPP
 tags: [CPP]
