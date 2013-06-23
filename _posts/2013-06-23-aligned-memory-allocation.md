@@ -13,5 +13,5 @@ The Unix malloc functions usually return aligned memory space, while Windows ver
 ###2. How
 + step1: allocate enough spare space;
 + step2: convert the void pointer to a char pointer;
-+ step3: saves the address which points where the whole allocated memory starts.( for free() )
-[This post](http://jongampark.wordpress.com/2008/06/12/implementation-of-aligned-memory-alloc) has detailed explanation.
++ step3: saves the address which points where the whole allocated memory starts.( for free() )<br>
+<b>[This post](http://jongampark.wordpress.com/2008/06/12/implementation-of-aligned-memory-alloc) has detailed explanation.</b>
