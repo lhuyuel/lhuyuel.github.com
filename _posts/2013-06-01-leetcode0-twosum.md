@@ -7,14 +7,12 @@ tags: [C++, LeetCode, 刷题]
 ---
 {% include JB/setup %}
 ###1. Problem:
-<blockquote>
 
+<blockquote>
 Given an array of integers, find two numbers such that they add up to a specific target number.
 <br>
 The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.<br>
-
 You may assume that each input would have exactly one solution.<br>
-
 Input: numbers={2, 7, 11, 15}, target=9<br>
 Output: index1=1, index2=2
 </blockquote>

@@ -8,15 +8,13 @@ tags: [C++, LeetCode,  刷题]
 {% include JB/setup %}
 ###1. Problem：
 <blockquote>
-Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
-<br>
+Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.<br>
 <br>    For example, given array S = {-1 2 1 -4}, and target = 1.
-
 <br>    The sum that is closest to the target is 2. (-1 + 2 + 1 = 2)
-
 </blockquote>
 ###2. My solution：
-{%highlight cpp linenos%}
+{% highlight cpp linenos %}
+
 int threeSumClosest(vector<int> &num, int target) 
 {        
     int n = num.size();
@@ -51,6 +49,6 @@ int threeSumClosest(vector<int> &num, int target)
      }
      return reslt;
 }
-{%endhighlight%}
+{% endhighlight %}
 ###3. Notes:
 之前reslt 初始值那里fail掉了1个测试，原来用的是INT_MAX, target是负数的时候，在reslt-target那里溢出了。

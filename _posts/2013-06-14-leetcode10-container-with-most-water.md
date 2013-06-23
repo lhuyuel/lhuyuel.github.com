@@ -13,7 +13,8 @@ Given n non-negative integers a1, a2, ..., an, where each represents a point at 
 <br>Note: You may not slant the container.
 </blockquote>
 ###2. My solution：
-{%highlight cpp linenos%}
+
+{% highlight cpp linenos%}
    int maxArea(vector<int> &height) {
         if(height.size() < 2) return 0;
         int maxArea = 0;
@@ -31,4 +32,6 @@ Given n non-negative integers a1, a2, ..., an, where each represents a point at 
    
         return maxArea;
     }
-{%endhighlight%}
+{% endhighlight %}
+
+

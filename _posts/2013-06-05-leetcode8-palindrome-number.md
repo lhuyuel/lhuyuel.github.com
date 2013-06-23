@@ -12,6 +12,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 </blockquote>
 ###2. My Solution：
 {% highlight cpp linenos %}
+
     int reverse(int x)
     {
         int reslt = 0;

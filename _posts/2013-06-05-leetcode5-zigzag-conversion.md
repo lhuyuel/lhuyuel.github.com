@@ -9,7 +9,6 @@ tags: [C++, LeetCode,  刷题]
 ###1. Problem：
 <blockquote>
  The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)<br>
-
 P   A   H   N<br>
 A P L S I I G<br>
 Y   I   R<br>
@@ -17,13 +16,13 @@ Y   I   R<br>
 And then read line by line: "PAHNAPLSIIGYIR"<br>
 <br>
 Write the code that will take a string and make this conversion given a number of rows:<br>
-<br>
 string convert(string text, int nRows);<br>
 <br>
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".<br>
 </blockquote>
 ###2.My solution：
 {% highlight cpp linenos %}
+
 /*use a flag called "down" to mark if it should go down or up.
 It's very nice to use vector<char> to store lines.
 Be careful when nRows=1.*/

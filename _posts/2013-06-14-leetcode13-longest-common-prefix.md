@@ -11,7 +11,8 @@ tags: [C++, LeetCode,  刷题]
 Write a function to find the longest common prefix string amongst an array of strings.
 </blockquote>
 ###2. My solution：
-{%highlight cpp linenos%}
+{% highlight cpp linenos %}
+
    string longestCommonPrefix(vector<string> &strs) {
       
       int stringNum = strs.size();
@@ -35,6 +36,6 @@ Write a function to find the longest common prefix string amongst an array of st
       }
       return( strs[0].substr(0,pos) );
     }
-{%endhighlight %}
+{% endhighlight %}
 ###3. Notes:
 if后面多了个分号，看了好半天才改对。

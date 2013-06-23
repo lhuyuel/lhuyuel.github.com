@@ -11,7 +11,8 @@ tags: [C++, LeetCode,  刷题]
 Implement atoi to convert a string to an integer.
 </blockquote>
 ###2. My solusion：
-{% highlight cpp linenos%}
+{% highlight cpp linenos %}
+
    int atoi(const char *str) {
         const char *p = str;
         bool neg = false;
