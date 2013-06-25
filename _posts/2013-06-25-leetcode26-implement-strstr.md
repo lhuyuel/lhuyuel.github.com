@@ -45,10 +45,10 @@ Returns a pointer to the first occurrence of needle in haystack, or null if need
         return NULL; 
     }
 {% endhighlight %}
-Missed a "*" in the 3rd line, and the condition when *p_hs=='\0', spent a lot of time to figure out...Still not sure why missing the line if( *p_hs =='\0' ) can cause problem...
+Missed a asterisk in the 3rd line, and the condition when ```*p_hs=='\0'```, spent a lot of time to figure out...Still not sure why missing the line ```if( *p_hs =='\0' )``` can cause problem...
 ####2). Rabin–Karp algorithm and else
-I know the algorithm but I don't think I could write correct code within a time limit. It took me a long time even to get the brute force solution work...<br>
-<b>Other string searching algorithm: </b><br>
+I know the algorithm but I don't think I could write correct code within a time limit. It took me a long time even to get the brute force solution work...<br><br>
+<b>Other string searching algorithm: </b>
 + [Rabin–Karp algorithm](http://en.wikipedia.org/wiki/Rabin-Karp_algorithm)
 + [KMP(Knuth–Morris–Pratt algorithm)](http://en.wikipedia.org/wiki/Knuth-morris-pratt_algorithm)
 + [Boyer-Moore algorithm](http://en.wikipedia.org/wiki/Boyer_moore_algorithm)
