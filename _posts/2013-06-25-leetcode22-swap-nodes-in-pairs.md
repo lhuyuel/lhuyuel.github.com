@@ -30,7 +30,8 @@ So intended to avoid mess of pointers, I came up with only swaping the val in th
     }
 {% endhighlight %}
 
-But it seems that the problem expecting us to modify pointers only... After drawing three pages of nodes and pointers, finally, it works.<br>
+But it seems that the problem expecting us to modify pointers only... <br>
+After drawing three pages of nodes and pointers on paper, finally, it works.<br>
 Here's my solution:
 {% highlight cpp linenos %}
     ListNode *swapPairs(ListNode *head) 

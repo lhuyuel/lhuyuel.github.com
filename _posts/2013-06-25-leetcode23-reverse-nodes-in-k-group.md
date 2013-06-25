@@ -24,8 +24,8 @@ If not enough nodes left, just return current result.<br>
 else, reverse the current sub linked list(nodes between current subHead and fast pointer).<br>
 
 It looks like this, suppose k=3: 
-{% highlight cpp linenos %}
-            subEnd subHead     fast
+{% highlight cpp %}
+	    subEnd subHead     fast
 	        |   |           |
 	3   2   1   4   5   6   7   8   9
 	            |   |   |
