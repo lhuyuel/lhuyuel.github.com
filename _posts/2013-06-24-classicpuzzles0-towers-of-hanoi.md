@@ -29,7 +29,7 @@ void Hanoi( int n, char srcPeg, char auxPeg, char dstPeg )
 }
 {% endhighlight %}
 ###3. Variations:
-+ Bicolor Tower of Hanoi
+#### Bicolor Tower of Hanoi  
 <b>Solution:</b>
 {% highlight cpp linenos  %}
 void BicolorHanoi(int n, char srcPeg, char auxPeg, char dstPeg )
@@ -48,7 +48,7 @@ void BicolorHanoi(int n, char srcPeg, char auxPeg, char dstPeg )
 }
 {% endhighlight %}
 Here's a simple illustration:  
-(R=Red and Y=Yellow) 
+(R=Red and Y=Yellow)   
 Before:
 {% highlight cpp  %}
 	     |           |           |
@@ -121,5 +121,5 @@ After loop5:
 	     |      RRRRR|RRRRR YYYYY|YYYYY
 {% endhighlight %}
 
-+ Three color Tower of Hanoi:
+#### Three color Tower of Hanoi:
 Similar to Bicolor.
