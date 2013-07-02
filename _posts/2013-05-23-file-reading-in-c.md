@@ -2,7 +2,7 @@
 layout: post
 title: "File Reading in C++"
 description: "using ifstream and getline"
-category: learning
+category: accumulating
 tags: [C++]
 ---
 {% include JB/setup %}
