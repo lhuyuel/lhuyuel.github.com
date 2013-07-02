@@ -2,7 +2,7 @@
 layout: post
 title: "NetWork[0]: TCP vs. UDP"
 description: ""
-category:NetworkSystem 
+category: NetworkSystem 
 tags: [Network, basics]
 ---
 {% include JB/setup %}
