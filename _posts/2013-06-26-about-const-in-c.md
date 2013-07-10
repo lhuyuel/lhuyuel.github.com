@@ -17,19 +17,28 @@ It is simple in concept: variables declared with ‘const’ added become consta
 The simplest use is to declare a named constant. This was available in the ancestor of C++, C.  
   
 To do this, one declares a constant as if it was a variable but add ‘const’ before it. One has to initialise it immediately in the constructor because, of course, one cannot set the value later as that would be altering it. For example,
+		
 		const int Constant1=96;
 will create an integer constant, unimaginatively called ‘Constant1’, with the value 96.  
 
 Such constants are useful for parameters which are used in the program but are do not need to be changed after the program is compiled. It has an advantage for programmers over the C preprocessor ‘#define’ command in that it is understood & used by the compiler itself, not just substituted into the program text by the preprocessor before reaching the main compiler, so error messages are much more helpful.
 
 It also works with pointers but one has to be careful where ‘const’ is put as that determines whether the pointer or what it points to is constant. For example,
+		
 		const int * Constant2
+		
 declares that Constant2 is a variable pointer to a constant integer and
+		
 		int const * Constant2
+		
 is an alternative syntax which does the same, whereas
+		
 		int * const Constant3
+		
 declares that Constant3 is constant pointer to a variable integer and
+		
 		int const * const Constant4
+		
 declares that Constant4 is constant pointer to a constant integer. Basically ‘const’ applies to whatever is on its immediate left (other than if there is nothing there in which case it applies to whatever is its immediate right).
 
 ###2. Use of ‘const’ in Functions Return Values 
@@ -40,11 +49,14 @@ Even more useful is a pointer (constant or otherwise) to a ‘const’ value. Th
 For example, if a function which returns a fixed ‘Some text’ string is written like
 		char *Function1()
 		{ return “Some text”;}
+		
 then the program could crash if it accidentally tried to alter the value doing
 		Function1()[1]=’a’;
+		
 whereas the compiler would have spotted the error if the original function had been written
 		const char *Function1()
 		{ return "Some text";}
+		
 because the compiler would then know that the value was unalterable. (Of course, the compiler could theoretically have worked that out anyway but C is not that clever.)
 
 ###3. Where it Gets Messy - in Parameter Passing
@@ -54,20 +66,25 @@ When a subroutine or function is called with parameters, variables passed as the
 For example, a subroutine like
 		void Subroutine1(int Parameter1)
 		{ printf("%d",Parameter1);}
+		
 accepts the parameter passed to it in the default C & C++ way - which is a copy. Therefore the subroutine can read the value of the variable passed to it but not alter it because any alterations it makes are only made to the copy and are lost when the subroutine ends. E.g.
 		void Subroutine2(int Parameter1)
 		{ Parameter1=96;}
+		
 would leave the variable it was called with unchanged not set to 96.
 
 The addition of an ‘&’ to the parameter name in C++ (which was a very confusing choice of symbol because an ‘&’ in front of variables elsewhere in C generates pointers!) causes the actual variable itself, rather than a copy, to be used as the parameter in the subroutine and therefore can be written to thereby passing data back out the subroutine. Therefore
+		
 		void Subroutine3(int &Parameter1) 
 		{ Parameter1=96;}
+		
 would set the variable it was called with to 96. This method of passing a variable as itself rather than a copy is called a ‘reference’ in C++.
 
 That way of passing variables was a C++ addition to C. To pass an alterable variable in original C, a rather involved method was used. This involved using a pointer to the variable as the parameter then altering what it pointed to was used. For example
 
 		void Subroutine4(int *Parameter1) 
 		{ *Parameter1=96;}
+		
 works but requires the every use of the variable in the called routine altered like that and the calling routine also altered to pass a pointer to the variable. It is rather cumbersome.
 
 But where does ‘const’ come into this? Well, there is a second common use for passing data by reference or pointer instead of as a copy. That is when copying the variable would waste too much memory or take too long. This is particularly likely with large & compound user-defined variable types (‘structures’ in C & ‘classes’ in C++). So a subroutine declared
@@ -84,16 +101,20 @@ Ideally, the programmer should not need control this detail of specifying exactl
 ###4. Messier Still - in the Object Oriented Programming
 
 In Object Oriented Programming, calling a ‘method’ (the Object Oriented name for a function) of an object gives an extra complication. As well as the variables in the parameter list, the method has access to the member variables of the object itself which are always passed directly not as copies. For example a trivial class, ‘Class1’, defined as
+		
 		class Class1
 		{ void Method1();
 		  int MemberVariable1;}
+		
 has no explicit parameters at all to ‘Method1’ but calling it in an object in this class might alter ‘MemberVariable1’ of that object if ‘Method1’ happened to be, for example,
 		void Class1::Method1()
 		{ MemberVariable1=MemberVariable1+1;}
+		
 The solution to that is to put ‘const’ after the parameter list like
 		class Class2
 		{ void Method1() const;
 		  int MemberVariable1;}
+		
 which will ban Method1 in Class2 from being anything which can attempt to alter any member variables in the object.
 
 Of course one sometimes needs to combine some of these different uses of ‘const’ which can get confusing as in
