@@ -5,7 +5,6 @@ description: ""
 category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
-{% include JB/setup %}
 ###1. Problem：
 <blockquote>
 Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.Do not allocate extra space for another array, you must do this in place with constant memory.<br>

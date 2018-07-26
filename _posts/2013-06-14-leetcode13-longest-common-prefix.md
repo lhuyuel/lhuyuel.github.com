@@ -5,7 +5,6 @@ description: ""
 category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
-{% include JB/setup %}
 ###1. Problem：
 <blockquote>
 Write a function to find the longest common prefix string amongst an array of strings.

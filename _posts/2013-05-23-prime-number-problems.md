@@ -5,7 +5,6 @@ description: ""
 category: Algorithm
 tags: [Algorithm]
 ---
-{% include JB/setup %}
 Basically, there are problems like these:
 + Given a number N, test if it is a prime number
 + Print out prime numbers that are less than N

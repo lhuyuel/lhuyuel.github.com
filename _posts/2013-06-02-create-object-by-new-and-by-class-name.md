@@ -5,7 +5,6 @@ description: ""
 category: CPP
 tags: [C++, 经验]
 ---
-{% include JB/setup %}
 使用new创建的对象和直接用类名创建的对象在存储空间上是有区别的。<br>
 使用new创建的对象存储在堆上，而直接定义的对象存储在栈上。<br>
 两种存储的区别：<br>

@@ -5,7 +5,6 @@ description: ""
 category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
-{% include JB/setup %}
 ###1. Poblem：
 <blockquote>
 Determine whether an integer is a palindrome. Do this without extra space.

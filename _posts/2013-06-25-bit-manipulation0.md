@@ -5,7 +5,6 @@ description: ""
 category: Programming
 tags: [Bit Manipulation]
 ---
-{% include JB/setup %}
 Grab from [Matrix67](http://www.matrix67.com/blog/archives/263)
 ###===1. and运算 ===
 and运算通常用于二进制取位操作，例如一个数 and 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位为0表示该数为偶数，最末位为1表示该数为奇数.  

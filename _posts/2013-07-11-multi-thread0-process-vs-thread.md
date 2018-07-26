@@ -5,7 +5,6 @@ description: ""
 category: accumulating
 tags: [Multi-thread]
 ---
-{% include JB/setup %}
 *From cracking the coding interview*
 ###1. Process
 A process can be thought of as an instance of a program in execution. A process is an independent entity to which system resources are allocated. Each process is executed in a separate address space, and one process cannot access the variables and data structures of another process, If a process wishes to accesss anothre process's resources, inter-process communications have to be used. These include pipes, files, sockets, and other forms.

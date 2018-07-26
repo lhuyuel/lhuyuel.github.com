@@ -5,7 +5,6 @@ description: ""
 category: CPP
 tags: [CPP]
 ---
-{% include JB/setup %}
 *grab from [codeguru](http://forums.codeguru.com/showthread.php?312742-Visual-C-Debugging-How-to-manage-memory-leaks) *
 ###1. What is a memory leak?
 Memory leak is the failure to properly deallocate memory that was previously allocated.

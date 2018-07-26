@@ -5,7 +5,6 @@ description: ""
 category: accumulating
 tags: [C++]
 ---
-{% include JB/setup %}
 *grab from [here](http://duramecho.com/ComputerInformation/WhyHowCppConst.html) *
 
 The 'const' system is one of the really messy features of C++.

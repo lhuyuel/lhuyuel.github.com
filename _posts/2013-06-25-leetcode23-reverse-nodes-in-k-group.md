@@ -5,7 +5,6 @@ description: ""
 category: 练习题
 tags: [C++, LeetCode,  刷题]
 ---
-{% include JB/setup %}
 ###1. Problem：
 <blockquote>
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.<br>

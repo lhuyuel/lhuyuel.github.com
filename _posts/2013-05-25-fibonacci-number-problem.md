@@ -5,7 +5,6 @@ description: ""
 category: Algorithm
 tags: [Algorithm]
 ---
-{% include JB/setup %}
 ###1. The Nth Fibonacci number 求费氏数列第N项
 
 According to the definition of Fibonacci sequence, the Nth number is:

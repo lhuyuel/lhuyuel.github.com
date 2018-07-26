@@ -5,7 +5,6 @@ description: "using ifstream and getline"
 category: accumulating
 tags: [C++]
 ---
-{% include JB/setup %}
 ###1.Read file by line and word
 
 Suppose we have a file named 'data.txt', which contains the following:

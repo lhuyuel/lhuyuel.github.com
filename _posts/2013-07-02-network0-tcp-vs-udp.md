@@ -5,7 +5,6 @@ description: ""
 category: NetworkSystem 
 tags: [Network, basics]
 ---
-{% include JB/setup %}
 
 grab from [here](http://www.skullbox.net/tcpudp.php)
 

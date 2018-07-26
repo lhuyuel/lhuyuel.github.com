@@ -5,7 +5,6 @@ description: ""
 category: Ubuntu
 tags: [Ubuntu, 经验, 设置]
 ---
-{% include JB/setup %}
 我的VirtualBox版本是4.1.12。
 ###Step1：
 在VirtualBox的菜单下找到<b>Devices</b>标签，选<b>Install Guest Additions</b>或者使用快捷键：Host+D。会有一个光盘的icon跳出来(VBOXADDITIONS_版本号)。  
